@@ -5,12 +5,25 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	background-color: #ddd;
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 .mainCont {
-	margin-top: 100px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.title {
+	width: 100%;
+	margin: 2px;
+}
+.bTemp {
+	width: 100%;
+	margin: 2px;
 }
 
 .graphContainer {
@@ -19,4 +32,21 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #777;
+}
+
+.tooltip {
+	z-index: 20;
+	position: absolute;
+	visibility: hidden;
+}
+
+.legend {
+	z-index: 20;
+	position: absolute;
+	visibility: hidden;
+}
+
+.fillColor text{
+	fill: white;
 }
